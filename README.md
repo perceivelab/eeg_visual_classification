@@ -1,4 +1,4 @@
-# EEG-Based Visual Classification
+# EEG-Based Visual Classification Dataset
 
 This dataset includes EEG data from 6 subjects. The recording protocol included 40 object classes with 50 images each, taken from the ImageNet dataset, giving a
 total of 2,000 images. Visual stimuli were presented to the users in a block-based setting, with images of each class shown consecutively in a single sequence. Each image was shown for 0.5 seconds. A 10-second black screen (during which we kept recording EEG data) was presented between class blocks.

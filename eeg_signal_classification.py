@@ -25,13 +25,10 @@ parser.add_argument('-tl', '--time_low', default=20, type=float, help="lowest ti
 parser.add_argument('-th', '--time_high', default=460,  type=float, help="highest time value")
 
 # Model type/options
-parser.add_argument('-mt','--model_type', default='lstm', help='specify which generator should be used: lstm|siskind|model10|EEGNet|syncnet') 
+parser.add_argument('-mt','--model_type', default='lstm', help='specify which generator should be used: lstm|model10') # Modle 10 stands for the ChannelNet model
 # It is possible to test out multiple deep classifiers:
 # - lstm is the model described in the paper "Deep Learning Human Mind for Automated Visual Classification”, in CVPR 2017
-# - siskind is the model described in the paper "The perils and pitfalls of block design in EEG classification tasks", TPAMI 2020
 # - model10 is the model described in the paper "Decoding brain representations by multimodal learning of neural activity and visual features", TPAMI 2020
-# - EEGNet is the model described in the paper "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces", Journal of Neural Engineering 2018
-# - syncnet is the model described in the paper "Targeting EEG/LFP synchrony with neural nets", NIPS 2017
 parser.add_argument('-mp','--model_params', default='', nargs='*', help='list of key=value pairs of model options')
 parser.add_argument('--pretrained_net', default='', help="path to pre-trained net (to continue training)")
 
